@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <title>Table of APIs</title>
+        <meta name= "description" content= "Links and descriptions to a selection of APIs">
+		<meta name= "author" content= "Claire Millward">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    </head>
+
+    <body> 
+        <table>
+            <thead>
+                <td> API name </td>
+                <td> API description </td>
+                <td></td>
+            </thead>
+
+            <!--First API example : TimeZone-->
+
+            <tr>
+                <td>1.Timezone</td>
+
+                <td>
+                    <fieldset>
+
+                        <p>Input longitude and latitude to find out which country it belongs to.</p>
+                                           
+                        <input type="number" id="lat" placeholder="latitude" />
+
+                        <input type="number" id="lng" placeholder="longitude" />
+                        
+
+                        <br> 
+                        
+                    </fieldset>
+                </td> 
+
+                <td><button id="btn_timezone">submit</button></td>
+            </tr>
+
+
+
+            <!--Second API example : -->
+
+            <tr>
+                <td>Address</td>
+
+                <td>
+                    <fieldset>
+
+                        <p>Input longitude and latitude to find out what the nearest address is.</p>
+                                           
+                        <input type="number" id="addLat" placeholder="latitude" />
+
+                        <input type="number" id="addLng" placeholder="longitude" />
+
+                        <br> 
+                        
+                    </fieldset>
+                </td>
+
+                <td><button id="btn_address">submit</button></td>
+            </tr>
+
+
+
+            <!--Third API example : -->
+
+            <tr>
+                <td>3.Population</td>
+
+                <td>
+                    <fieldset>
+                    
+                        <p>Input longitude and latitude to find out the nearest country and its population.</p>
+    
+                        <input type="number" id="popLat" placeholder="latitude" />
+    
+                        <input type="number" id="popLng" placeholder="longitude" />
+
+                    </fieldset>
+                </td>
+
+                <td><button id="btn_population">submit</button></td>
+            </tr>
+
+
+
+            <!--Results Bar : -->
+
+            <tr>
+                <td colspan="3">Results</td>
+                
+            </tr>
+
+            <tr>
+                <td id="txtViewResult"></td>
+            </tr>
+
+        </table>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <script type="application/javascript" src="js/script.js"></script>
+    </body>
+
+    <footer> 
+
+    </footer>
+</html>
